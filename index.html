@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        .carousel-item img {
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Peças e Serviços Automotivos</h1>
+    </header>
+    <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <article class="card">
+                        <header class="card-header">
+                            Peças de Reposição
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2023/09/20/11/39/engine-8264649_1280.jpg" alt="motor">
+                        <div class="card-body">
+                            <h4 class="card-title">Itens para Motor</h4>
+                            <p class="card-text">
+                                Todas as Partes e Peças para Motor Estão Disponíveis a Pronta Entrega
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia Mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>18/12/2023 às 21h08</time>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <article class="card">
+                        <header class="card-header">
+                            Peças de Reposição
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2017/09/16/13/45/clutch-2755546_1280.jpg" alt="embreagem">
+                        <div class="card-body">
+                            <h4 class="card-title">Discos de Embreagem</h4>
+                            <p class="card-text">
+                                Todas as Partes e Peças para seu Sistema de Embreagem Estão Disponíveis a Pronta Entrega
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia Mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>18/12/2023 às 21h08</time>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <article class="card">
+                        <header class="card-header">
+                            Peças de Reposição
+                        </header>
+                        <img src="https://cdn.pixabay.com/photo/2015/09/22/20/54/gear-952450_1280.jpg" alt="engrenagens">
+                        <div class="card-body">
+                            <h4 class="card-title">Engrenagens em Geral</h4>
+                            <p class="card-text">
+                                Engrenagens em Geral Disponíveis a Pronta Entrega
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia Mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>18/12/2023 às 21h08</time>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-white text-center py-4 mt-3">
+        <h2>Conheça Mais dos Nossos Serviços</h2>
+    </div>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/10/03/20/53/car-970353_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Serviços para Otimização de Ventilação e Resfriamento</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/01/05/10/38/auto-repair-1954636_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Serviços para Ajuste e Correção dos Eixos</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/07/28/16/50/car-engine-1548434_1280.jpg">
+                    <div class="carousel-caption">
+                        <h2>Serviços de Limpeza Interna</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
